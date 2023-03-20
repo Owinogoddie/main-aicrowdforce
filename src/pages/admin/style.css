@@ -1,0 +1,45 @@
+/* form { minWidth: '100%', margin: '0auto', padding: '20px', border: '1px solid #ccc', borderRadius: '4px' }
+
+<div style={{ marginBottom: '20px' }}>
+  <label htmlFor="title" style={{ display: 'block', marginBottom: '5px' }}>Title:</label>
+  <input type="text" id="title" value={title} onChange={handleTitleChange} style={{ width: '100%', padding: '10px', border: '1px solid #ccc', borderRadius: '4px' }} />
+</div>
+<div style={{ marginBottom: '20px' }}>
+  <label htmlFor="description" style={{ display: 'block', marginBottom: '5px' }}>Description:</label>
+  <textarea id="description" value={description} onChange={handleDescriptionChange} style={{ width: '100%', padding: '10px', border: '1px solid #ccc', borderRadius: '4px' }} />
+</div>
+<div style={{ marginBottom: '20px' }}>
+  <label htmlFor="image" style={{ display: 'block', marginBottom: '5px' }}>Image:</label>
+  <input type="file" id="image" onChange={handleImageChange} style={{ width: '100%', padding: '10px', border: '1px solid #ccc', borderRadius: '4px' }} />
+  {imageUrl && <img src={imageUrl} alt="Preview" style={{ marginTop: '10px', maxWidth: '100%', maxHeight: '200px' }} />}
+</div>
+<button type="submit" style={{ padding: '10px 20px', background: '#007bff', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Submit</button>
+</form> */
+
+.form{
+    width: 90%;
+    margin: 0 auto;
+ }
+ .preview__div{
+     margin: 0 auto;
+     padding: 1rem;
+     width: 100%;
+ }
+ .preview{
+     width:300px;
+     border-radius: 1rem;
+     margin-left: 30%;
+ }
+ input,textarea{
+     margin: 0.5rem;
+     outline:none;
+     background: transparent;
+     padding: 5px;
+     border-radius: 1rem;
+ }
+ button{
+     display: block;
+     align-items: center;
+     text-align: center;
+     padding:5px;
+ }

@@ -1,0 +1,118 @@
+/* <div class="sgclbv1-wrapper" style="background-color: rgba(255, 255, 255, 1.0);"> */
+
+.sgclbv1-wrapper{
+    padding:50px 0;
+    background-color: rgba(255, 255, 255, 1.0);
+}
+/* -webkit-font-smoothing: antialiased;
+color: #6d6d77;
+font-family: Gotham-Hero,Gotham-Regular,Gotham-Book,Gotham-light,Helvetica,Arial,Sans-Serif;
+font-size: 16px;
+line-height: 24px;
+padding: 100px 0;
+background-color: rgba(255, 255, 255, 1.0); */
+.sgclbv1-container{
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 15px;
+    position: relative;
+    z-index: 222;
+}
+.sgclbv1-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sgclbv1-title-wrapper {
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+.sgclbv1-title-wrapper h2 {
+    font-family: Gotham-hero;
+    font-size: 20px;
+    line-height: 30px;
+    color: #3c556e;
+    text-align: center;
+  margin:0;
+}
+#sgclbv1-title-dark h2 {
+    color: #ffffff;
+}
+.sgclbv1-title-wrapper h2 span.sgclbv1-client-number {
+    font-family: "Gotham-bold";
+    font-size: 1.5em;
+    display: block;
+    margin: 0 0 5px 0;
+} {
+    font-family: "Gotham-bold";
+    font-size: 1.5em;
+    display: block;
+    margin: 0 0 5px 0;
+}
+.sgclbv1-logo-band {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  justify-content: space-evenly;
+  transform:scale(0.8);
+  transform-origin:left center;
+    transition: 800ms;
+  opacity:0;
+}
+.sgclbv1-logo-band.active {
+  transform:scale(1);
+  opacity:1;
+}
+.sgclbv1-logo-band img {
+    margin: 8px 12px;
+    width: auto !important;
+    height: 27px;
+}
+.sgclbv1-logo-wrapper {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+}
+
+
+@media screen and (min-width:768px){
+  .sgclbv1-wrapper{
+    padding:100px 0;
+}
+.sgclbv1-title-wrapper {
+    width: 30%;
+  margin:0;
+}
+ .sgclbv1-logo-wrapper {
+    width: 63.5%;
+    padding-left: 3%;
+    margin-left: 3%;
+}
+  .sgclbv1-title-wrapper h2 {
+  
+    text-align: left;
+    font-size: 24px;
+    line-height: 34px;
+    color: #3c556e;
+}
+.sgclbv1-logo-band img {
+    margin: 15px 20px;
+}  
+  
+}
+
+@media screen and (min-width:992px){
+.sgclbv1-logo-band {
+  justify-content: space-between;}
+}
+
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .sgclbv1-wrapper{
+    background-attachment: initial !important;
+    background-position: right center !important;
+  }
+
+}

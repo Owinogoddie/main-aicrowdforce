@@ -1,0 +1,263 @@
+/* <img src="images/banner-AI-head-image-01.png" alt="AI-head-image-01" loading="lazy" width="732" height="700" style="max-width: 100%; height: 350.0px;" srcset="https://www.cloudfactory.com/hs-fs/hubfs/web19/images/banner/AI-head-image-01.png?width=366&amp;height=350&amp;name=AI-head-image-01.png 366w, https://www.cloudfactory.com/hs-fs/hubfs/web19/images/banner/AI-head-image-01.png?width=732&amp;height=700&amp;name=AI-head-image-01.png 732w, https://www.cloudfactory.com/hs-fs/hubfs/web19/images/banner/AI-head-image-01.png?width=1098&amp;height=1050&amp;name=AI-head-image-01.png 1098w, https://www.cloudfactory.com/hs-fs/hubfs/web19/images/banner/AI-head-image-01.png?width=1464&amp;height=1400&amp;name=AI-head-image-01.png 1464w, https://www.cloudfactory.com/hs-fs/hubfs/web19/images/banner/AI-head-image-01.png?width=1830&amp;height=1750&amp;name=AI-head-image-01.png 1830w, https://www.cloudfactory.com/hs-fs/hubfs/web19/images/banner/AI-head-image-01.png?width=2196&amp;height=2100&amp;name=AI-head-image-01.png 2196w" sizes="(max-width: 732px) 100vw, 732px">
+          
+              
+<div class="sbv4-background-image-video" 
+style="background-image:url('https://www.cloudfactory.com/hubfs/web19/images/banner/hero-banner-image-01.jpg');     background-repeat: no-repeat;
+background-size: cover;
+background-position: 50%;
+overflow: hidden;">  
+</div>  
+<a href="client-stories.html" id="" style="width: 204px;">
+Meet Our Clients
+</a>
+
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1672160897904185" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><style>
+.sbv4-background-image-video:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 22;
+    left: 0;
+    background-image: url(https://www.cloudfactory.com/hubfs/website-2016/assets/graphics/home-banner-video-overlay.png);
+    background-repeat: repeat;
+    opacity:0.1;
+}
+  
+  }
+</style> */
+.sbv4-single-cta a{
+    width: 204px;
+}
+
+.sbv4-background-image-video{ 
+background-image:url('https://www.cloudfactory.com/hubfs/web19/images/banner/hero-banner-image-01.jpg');     
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50%;
+overflow: hidden;
+}
+.sbv4-background-image-video:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 22;
+    left: 0;
+    background-image: url(https://www.cloudfactory.com/hubfs/website-2016/assets/graphics/home-banner-video-overlay.png);
+    background-repeat: repeat;
+    opacity:0.1;
+}
+.sbv4-banner-content h1 {
+    font-family:Gotham-hero; 
+font-size:42px;
+font-weight: normal;
+    line-height: 1.35em;
+}
+
+.sbv4-wrapper{
+    position:relative;
+    z-index:222;
+    padding: 80px 0 120px;
+        background: #054fa0;
+  }
+  .sbv4-background-image-video{
+    position:absolute;
+    z-index:2;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background: #054fa0;
+    background: -webkit-linear-gradient(top,#054fa0,#0a87ce);
+    background: -moz-linear-gradient(top,#054fa0,#0a87ce);
+    background: linear-gradient(180deg,#054fa0,#0a87ce);
+    overflow: hidden;
+  }
+  .sbv4-container{
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+    position:relative;
+    z-index:222;
+      display:flex;
+      flex-wrap:wrap;
+        align-items: center;
+  }
+  .sbv4-logo-wrap{
+   position:relative;
+    z-index:222;
+  }
+  
+  .sbv4-banner-content, .sbv4-banner-graphics {
+      width: 100%;
+  }
+  .sbv4-single-cta {
+      display: inline-block;
+      margin: 10px 20px 10px 0;
+  }
+  .sbv4-single-cta a {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      padding: 8px 30px;
+      font-size: 18px;
+      line-height: 28px;
+      border-radius: 4px;
+      text-transform: inherit;
+      font-family: Gotham-bold;
+      color: #fff;
+      transition: .5s;
+      display: inline-block;
+      text-align: center;
+      border: 1px solid #fff;
+      text-decoration: none;
+      min-width: 160px;
+  }
+  .sbv4-single-cta.active a {
+      background: #F55A15;
+      border: 1px solid #F55A15;
+  }
+  .sbv4-single-cta a:hover {
+      color: #fff;
+      background: #ff6c2d;
+      border: 1px solid #ff6c2d;
+  }
+  .sbv4-single-cta:first-child {
+    margin-left:0;
+  }
+  .sbv4-banner-content h1 {
+      color: #ffffff;
+  }
+  .sbv4-banner-content p {
+      font-size: 18px;
+      line-height: 28px;
+      color: #fff;
+      margin-bottom: 15px;
+      font-family: Gotham-regular;
+  
+  }
+  .sbv4-banner-graphics img {
+      margin: 0 auto;
+      display: block;
+    width:auto;
+  }
+  .sbv4-cta {
+      transform: scale(0.8);
+      transform-origin: left center;
+      transition: 600ms;
+      opacity:0;
+  }
+  .sbv4-cta.active-now{
+      transform: scale(1);
+      opacity:1;
+  }
+ 
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-500px * 4.78));
+    }
+  }
+  .sbv4-logo-wrap.slider {
+      position: absolute;
+      bottom: 0;
+      z-index:222;
+      width: 100%;
+      background: rgb(6 93 163 / 85%);
+      padding: 10px 0;
+  }
+  .slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+  }
+  .slider .slide-track {
+    animation: scroll 80s linear infinite;
+    display: flex;
+    width: calc(500px * 12);
+    align-items: center;
+  }
+  .slider .slide-track:hover{
+  animation-play-state: paused;
+  }
+  .slider .slide {
+      margin: 0 40px;
+        display: flex;
+      align-items: center;
+  }
+  .slider .slide img {
+      width: auto;
+    max-width:none !important;
+    height: 30px;
+  }
+  
+ 
+  
+  @media (max-width:991px){
+  .sbv4-container {
+      flex-direction: column;
+      align-items: flex-start;
+    display: block;
+  }
+    .sbv4-banner-content {
+      margin: 0 0 20px 0;
+  }
+    .sbv4-wrapper {
+      padding: 50px 0 80px 0;
+  }
+   .sbv4-banner-content-wrap {
+      text-align: center;
+  } 
+  .sbv4-single-cta, .sbv4-single-cta:first-child {
+      margin: 10px;
+  }  
+  .sbv4-cta {
+      transform-origin: center;
+  } 
+    
+  }
+  
+  @media (min-width:992px){
+  .sbv4-banner-content {
+      width: 60%;
+  }
+  .sbv4-banner-graphics {
+      width: 40%;
+  }
+  .sbv4-banner-content-wrap{
+    padding:0 30px 0 0;
+    }
+  }
+  
+  @media (max-width:767px){
+  .sbv4-banner-content h1 {
+      font-size: 28px !important;
+      line-height: 1.3em !important;
+    margin-bottom:20px;
+  }
+    .slider .slide {
+      margin: 0 15px;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 6.25));
+    }
+  }  
+   .slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 12);
+    align-items: center;
+  } 
+  }
+  

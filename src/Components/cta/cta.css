@@ -1,0 +1,209 @@
+/*     
+            <div class="smcsv2-single-cta">
+               
+              
+            <a href="#footer-form-anchor" id="mid-cta-talk-to-sales" style="width: 140px;">
+              Contac
+
+              
+<div class="smcsv2-banner-module center" style="background-image:url('https://www.cloudfactory.com/hubfs/web19/images/banner/blue-gradient-bg-03.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+    background-attachment: fixed;"
+    <style>
+  .smcsv2-content-wrapper h1{
+    font-family:Gotham-hero; 
+    font-size:30px;
+    line-height: 1.4em;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 15px;
+        display: block;
+        max-width: 850px;
+  }
+
+</style> */
+#mid-cta-talk-to-sales{
+    width: 140px;
+}
+
+.smcsv2-banner-module center{
+    background: blue;
+background-image:url('./blue-gradient-bg-03.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+    background-attachment: fixed;
+}
+.smcsv2-content-wrapper h1{
+    font-family:Gotham-hero; 
+    font-size:30px;
+    line-height: 1.4em;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 15px;
+        display: block;
+        max-width: 850px;
+  }
+
+.smcsv2-banner-module {
+    overflow: hidden;
+    padding: 40px 0;
+    position: relative;
+    
+background-image:url('./blue-gradient-bg-03.png');
+}
+
+.smcsv2-wrapper {
+    position: relative;
+    z-index: 222
+}
+
+.smcsv2-banner-module.left {
+    text-align: center
+}
+
+.smcsv2-banner-module.right {
+    text-align: right
+}
+
+.smcsv2-container {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 15px
+}
+
+.smcsv2-shot-detail p {
+    color: #fff;
+    font-family: Gotham-regular;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    max-width: 550px
+}
+
+.smcsv2-content-wrapper h2 {
+    color: #fff;
+    font-family: Gotham-hero;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 15px;
+    max-width: 600px
+}
+
+.smcsv2-banner-module.center {
+    text-align: center
+}
+
+.smcsv2-banner-module.center .smcsv2-content-wrapper h2,.smcsv2-banner-module.center .smcsv2-shot-detail p {
+    margin: 0 auto 15px
+}
+
+.smcsv2-single-cta a {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-family: Gotham-bold;
+    font-size: 18px;
+    line-height: 28px;
+    min-width: 140px;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: inherit;
+    transition: .5s
+}
+
+.smcsv2-single-cta.active a {
+    background: #f55a15;
+    border: 1px solid #f55a15
+}
+
+.smcsv2-single-cta a:hover {
+    background: #ff6c2d;
+    border: 1px solid #ff6c2d;
+    color: #fff
+}
+
+.smcsv2-shot-detail {
+    display: block;
+    margin-bottom: 10px;
+    overflow: hidden
+}
+
+.smcsv2-single-cta {
+    display: inline-block;
+    margin: 10px 15px
+}
+
+.smcsv2-banner-module.left .smcsv2-cta {
+    text-align: center
+}
+
+.smcsv2-banner-module.left .smcsv2-content-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.smcsv2-light .smcsv2-content-wrapper h2,.smcsv2-light .smcsv2-shot-detail p,.smcsv2-light .smcsv2-single-cta a {
+    border-color: #3c556e;
+    color: #3c556e
+}
+
+.smcsv2-light .smcsv2-single-cta a {
+    border-color: #f55a15;
+    color: #f55a15
+}
+
+.smcsv2-light .smcsv2-single-cta.active a {
+    border-color: #f55a15;
+    color: #fff
+}
+
+@media (min-width: 768px) {
+    .smcsv2-banner-module {
+        padding:65px 0
+    }
+
+    .smcsv2-banner-module.left {
+        text-align: left
+    }
+
+    .smcsv2-content-wrapper h2 {
+        font-size: 30px;
+        line-height: 40px
+    }
+
+    .smcsv2-shot-detail p {
+        font-size: 16px;
+        line-height: 26px
+    }
+
+    .smcsv2-banner-module.left .smcsv2-content-wrapper {
+        flex-direction: inherit
+    }
+
+    .smcsv2-banner-module.left .smcsv2-content-wrapper h2 {
+        text-align: left
+    }
+}
+
+@media (min-width: 1025px) {
+    .smcsv2-banner-module.left .smcsv2-content-wrapper {
+        padding-left:0
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width:1024px) {
+    .smcsv2-banner-module {
+        background-attachment:scroll!important;
+        background-position: 100%!important
+    }
+}

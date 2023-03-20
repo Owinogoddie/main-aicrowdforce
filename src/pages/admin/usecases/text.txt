@@ -1,0 +1,339 @@
+const mongoose = require('mongoose');
+
+const categorySchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true
+  }
+});
+
+const itemSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    required: true
+  },
+  image: {
+    type: String,
+    required: true
+  },
+  category: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Category',
+    required: true
+  }
+});
+
+const Category = mongoose.model('Category', categorySchema);
+const Item = mongoose.model('Item', itemSchema);
+
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/my-database', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => {
+  console.log('Connected to database');
+})
+.catch((error) => {
+  console.log('Error connecting to database: ', error);
+});
+
+
+const newItem = new Item({
+  title: 'My Item Title',
+  description: 'My Item Description',
+  image: 'https://example.com/my-item-image.png'
+});
+
+Category.findOne({ name: 'My Category Name' })
+.then((category) => {
+  if (!category) {
+    console.log('Category not found');
+    return;
+  }
+
+  newItem.category = category._id;
+  return newItem.save();
+})
+.then(() => {
+  console.log('Item saved to database');
+})
+.catch((error) => {
+  console.log('Error saving item to database: ', error);
+});
+
+
+
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
+const AddItemForm = () => {
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const [image, setImage] = useState("");
+  const [category, setCategory] = useState("");
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    // Fetch categories from API endpoint and store in state
+    axios.get("/api/categories").then((res) => {
+      setCategories(res.data);
+    });
+  }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Create new item object to send to API endpoint
+    const newItem = {
+      title,
+      description,
+      image,
+      category,
+    };
+
+    // Send POST request to API endpoint to add new item to database
+    axios.post("/api/items", newItem).then((res) => {
+      console.log(res.data);
+      // Reset form after successful submission
+      setTitle("");
+      setDescription("");
+      setImage("");
+      setCategory("");
+    });
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label htmlFor="title">Title:</label>
+        <input
+          type="text"
+          id="title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="description">Description:</label>
+        <textarea
+          id="description"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="image">Image URL:</label>
+        <input
+          type="text"
+          id="image"
+          value={image}
+          onChange={(e) => setImage(e.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="category">Category:</label>
+        <select
+          id="category"
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+        >
+          <option value="">Select category</option>
+          {categories.map((category) => (
+            <option key={category._id} value={category._id}>
+              {category.name}
+            </option>
+          ))}
+        </select>
+      </div>
+      <button type="submit">Add Item</button>
+    </form>
+  );
+};
+
+export default AddItemForm;
+
+
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+const EditItem = ({ match }) => {
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [image, setImage] = useState(null);
+  const [category, setCategory] = useState('');
+
+  useEffect(() => {
+    axios.get(`/items/${match.params.id}`)
+      .then(res => {
+        setTitle(res.data.title);
+        setDescription(res.data.description);
+        setImage(res.data.image);
+        setCategory(res.data.category);
+      })
+      .catch(err => console.log(err));
+  }, [match.params.id]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    formData.append('title', title);
+    formData.append('description', description);
+    if (image) {
+      formData.append('image', image);
+    }
+    formData.append('category', category);
+    axios.patch(`/items/${match.params.id}`, formData)
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Title:
+        <input type="text" value={title} onChange={e => setTitle(e.target.value)} />
+      </label>
+      <br />
+      <label>
+        Description:
+        <textarea value={description} onChange={e => setDescription(e.target.value)} />
+      </label>
+      <br />
+      <label>
+        Image:
+        <input type="file" onChange={e => setImage(e.target.files[0])} />
+      </label>
+      <br />
+      <label>
+        Category:
+        <select value={category} onChange={e => setCategory(e.target.value)}>
+          <option value="">Select a category</option>
+          <option value="category1">Category 1</option>
+          <option value="category2">Category 2</option>
+          <option value="category3">Category 3</option>
+        </select>
+      </label>
+      <br />
+      <button type="submit">Update Item</button>
+    </form>
+  );
+};
+
+export default EditItem;
+import React, { useState } from 'react';
+import { Modal, Button, Form } from 'react-bootstrap';
+
+function AddItemModal(props) {
+  const [showModal, setShowModal] = useState(false);
+  const [itemData, setItemData] = useState({ title: '', description: '', image: '', category: '' });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setItemData({ ...itemData, [name]: value });
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // send item data to backend API here
+    // then close the modal and reset the item data
+    setShowModal(false);
+    setItemData({ title: '', description: '', image: '', category: '' });
+  }
+
+  return (
+    <>
+      <Button variant="primary" onClick={() => setShowModal(true)}>Add Item</Button>
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Add Item</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group controlId="formTitle">
+              <Form.Label>Title</Form.Label>
+              <Form.Control type="text" name="title" value={itemData.title} onChange={handleInputChange} required />
+            </Form.Group>
+            <Form.Group controlId="formDescription">
+              <Form.Label>Description</Form.Label>
+              <Form.Control as="textarea" rows={3} name="description" value={itemData.description} onChange={handleInputChange} required />
+            </Form.Group>
+            <Form.Group controlId="formImage">
+              <Form.Label>Image URL</Form.Label>
+              <Form.Control type="text" name="image" value={itemData.image} onChange={handleInputChange} required />
+            </Form.Group>
+            <Form.Group controlId="formCategory">
+              <Form.Label>Category</Form.Label>
+              <Form.Control type="text" name="category" value={itemData.category} onChange={handleInputChange} required />
+            </Form.Group>
+            <Button variant="primary" type="submit">Add Item</Button>
+          </Form>
+        </Modal.Body>
+      </Modal>
+    </>
+  );
+}
+
+
+
+import React, { useState } from "react";
+import { Modal, Button } from "react-bootstrap";
+
+function EditButton({ item }) {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const handleEdit = () => {
+    // Code to edit the item
+    handleClose();
+  };
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Edit
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Edit Item</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {/* Form to edit item */}
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Cancel
+          </Button>
+          <Button variant="primary" onClick={handleEdit}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+
+export default EditButton;
+
+
+import React from "react";
+import EditButton from "./EditButton";
+
+function Item({ item }) {
+  return (
+    <div>
+      <h2>{item.title}</h2>
+      <p>{item.description}</p>
+      <EditButton item={item} />
+    </div>
+  );
+}
+
+export default Item;

@@ -1,0 +1,200 @@
+/* <div class="scesv1-section " style="background-color: rgba(255, 255, 255, 1.0);"> */
+
+.row-fluid [class*=span] {
+    min-height: 1px!important
+}
+
+.scesv1-section {
+    padding: 50px 0
+}
+
+.scesv1-section.show-bg-image {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+
+.scesv1-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+.scesv1-content-details {
+    z-index: 222;
+    width: 100%;
+    margin-bottom: 30px
+}
+
+.scesv1-thumbnail-wrap {
+    width: auto;
+    max-width: 100%
+}
+
+.scesv1-wrapper.Left,.scesv1-wrapper.Right {
+    display: flex;
+    flex-direction: column
+}
+
+.scesv1-content-wrap h2 {
+    font-family: Gotham-hero;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0 0 15px;
+    color: #3c556e
+}
+
+.scesv1-content-wrap ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+    list-style: inside
+}
+
+.scesv1-content-wrap p {
+    margin: 0 0 15px
+}
+
+.scesv1-content-wrap p,.scesv1-content-wrap ul li {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6d6d77;
+    font-family: Gotham-regular
+}
+
+.scesv1-content-wrap ul li {
+    position: relative;
+    margin: 0 0 8px
+}
+
+.scesv1-content-wrap p a,.scesv1-content-wrap ul li a {
+    color: #1f89de;
+    text-decoration: none
+}
+
+.scesv1-content-wrap p a:hover,.scesv1-content-wrap ul li a:hover {
+    opacity: .5
+}
+
+.scesv1-content-wrap ul li {
+    list-style: none
+}
+
+.scesv1-content-wrap ul li:before {
+    content: "";
+    width: 12px;
+    height: 24px;
+    position: absolute;
+    left: -20px;
+    background-image: url(../fonts/icons-tick-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain
+}
+
+.scesv1-wrapper.Left .scesv1-content-details {
+    padding-left: 0
+}
+
+.scesv1-wrapper.Right .scesv1-content-details {
+    padding-right: 0
+}
+
+p.scesv1_title-tag {
+    font-family: Gotham-hero;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 0 15px;
+    padding: 5px 10px;
+    line-height: 24px;
+    background: rgba(60,85,110,.06);
+    right: 0;
+    color: rgba(60,85,110,.8)
+}
+
+p.scesv1-bottom-link {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 20px 0 0
+}
+
+p.scesv1-bottom-link a {
+    text-decoration: none;
+    color: #1f89de;
+    opacity: 1
+}
+
+p.scesv1-bottom-link a:hover {
+    opacity: .5
+}
+
+span.scesv1-title-head {
+    font-family: Gotham-hero;
+    font-size: 13px;
+    margin: 0 0 6px;
+    line-height: 24px;
+    right: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    color: #3c556e
+}
+
+@media (min-width: 768px) {
+    .scesv1-content-details {
+        width:70%
+    }
+
+    .scesv1-thumbnail-wrap {
+        width: 30%;
+        padding: 0
+    }
+
+    .scesv1-wrapper.Right {
+        display: flex;
+        flex-direction: inherit
+    }
+
+    .scesv1-wrapper.Left {
+        display: flex;
+        flex-direction: row-reverse
+    }
+
+    .scesv1-section {
+        padding: 100px 0
+    }
+
+    .scesv1-content-details {
+        margin-bottom: 0
+    }
+
+    .scesv1-content-wrap h2 {
+        font-size: 30px;
+        line-height: 40px
+    }
+
+    .scesv1-wrapper.Left .scesv1-content-details {
+        padding-left: 20px
+    }
+
+    .scesv1-wrapper.Right .scesv1-content-details {
+        padding-right: 20px
+    }
+}
+
+@media (min-width: 992px) {
+    .scesv1-content-details {
+        width:56%
+    }
+
+    .scesv1-thumbnail-wrap {
+        width: 44%
+    }
+
+    .scesv1-wrapper.Left .scesv1-content-details {
+        padding-left: 40px
+    }
+
+    .scesv1-wrapper.Right .scesv1-content-details {
+        padding-right: 40px
+    }
+}

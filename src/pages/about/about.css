@@ -1,0 +1,648 @@
+.home-hero-banner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    background-image: url(../images/banner-about-cf-mobile-thumbnail.jpg);
+    position: relative
+}
+
+.home-hero-banner:before {
+    content: "";
+    background-image: url(../images/graphics-home-banner-video-overlay.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0
+}
+
+.hero-text-wrap {
+    position: relative;
+    z-index: 22;
+    opacity: .8
+}
+
+.home-hero-banner h1 span {
+    font-family: "Gotham-Bold"
+}
+
+.home-hero-banner h1 {
+    font-size: 30px;
+    line-height: 38px
+}
+
+.home-hero-banner p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 750px
+}
+
+.three-block-section {
+    padding: 50px 0 20px;
+    text-align: center
+}
+
+.title-wrap {
+    text-align: center
+}
+
+span.icon-wrap {
+    background: #fbfbfb;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+    filter: grayscale(0%);
+    transition: 300ms;
+    margin: 0 auto 15px;
+    object-fit: contain
+}
+
+.single-block-wrap {
+    margin-bottom: 30px
+}
+
+.single-block-wrap:hover span.icon-wrap {
+    filter: grayscale(0);
+    transition: 300ms;
+    background: #f5f8fa;
+    transform: scale(1.05)
+}
+
+.three-block-section h3 {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center
+}
+
+.single-block-wrap p {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 10px
+}
+
+.home-usecase-wrapper {
+    background: #f5f8fa
+}
+
+.home-usecase-wrapper .row-fluid-wrapper {
+    max-width: 100%;
+    padding: 0
+}
+
+.home-usecase-content p {
+    margin-bottom: 10px
+}
+
+.home-usecase-content {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 30px 15px 50px;
+    margin-left: 0 !important
+}
+
+.home-usecase-wrapper .row-fluid {
+    display: block
+}
+
+.tab-img {
+    display: none
+}
+
+.tab-img.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: unset
+}
+
+.home-usecase-img {
+    position: relative;
+    overflow: hidden;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100% !important;
+    max-width: 100%
+}
+
+.story-title-wrap h2 {
+    margin-bottom: 20px
+}
+
+.story-title-wrap {
+    padding-bottom: 50px;
+    background: #fff;
+    text-align: center;
+    display: block;
+    overflow: hidden
+}
+
+.client-section {
+    padding: 50px 0 25px
+}
+
+.client-title {
+    text-align: center
+}
+
+.tab-img.active img {
+    height: auto;
+    width: 100%;
+    max-width: unset
+}
+
+.contact-form-wrapper .actions input {
+    display: block;
+    width: 100%
+}
+
+.hs-tabs__nav li a.hs-tabs__navitem--active:after {
+    background: #1f89de
+}
+
+.hs-tabs__nav li a:after {
+    content: "";
+    background: #cfdee7;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 34px;
+    margin-top: 10px
+}
+
+.hs-tabs__navitem:not(.hs-tabs__navitem--active) {
+    background-color: transparent;
+    color: #3c556e
+}
+
+.hs-tabs__item,.hs-tabs__navitem {
+    border: 0
+}
+
+.hs-tabs__navitem--active {
+    color: #054fa0;
+    background: 0
+}
+
+.hs-tabs__navitem {
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "Gotham-bold";
+    text-transform: uppercase;
+    padding: 20px 4px 30px
+}
+
+.hs-tabs__nav li {
+    max-width: unset;
+    min-width: unset;
+    width: 33%
+}
+
+.hs-tabs {
+    min-height: 300px
+}
+
+.three-block-section img {
+    margin-bottom: 10px
+}
+
+@media(min-width: 768px) {
+    .home-hero-banner {
+        background-image:url(../images/banner-about-cf-large-thumbnail.jpg)
+    }
+
+    .three-block-section img {
+        margin-bottom: 0
+    }
+
+    .single-block-wrap {
+        margin-bottom: 0
+    }
+
+    .three-block-section {
+        padding: 50px 0
+    }
+
+    .home-hero-banner h1 {
+        font-size: 38px;
+        line-height: 42px
+    }
+
+    .hs-tabs__nav li {
+        max-width: 220px;
+        min-width: 220px;
+        width: inherit
+    }
+
+    .hs-tabs__navitem {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 15px 5px
+    }
+}
+
+@media(min-width: 992px) {
+    .client-section {
+        padding:80px 0
+    }
+
+    .home-usecase-content {
+        padding: 50px 0;
+        width: 57.264957265% !important;
+        margin-left: 2.564102564% !important;
+        max-width: 550px
+    }
+
+    .home-hero-banner h1 {
+        font-size: 42px;
+        line-height: 58px
+    }
+
+    .home-hero-banner {
+        padding: 160px 0
+    }
+
+    .home-usecase-wrapper .row-fluid {
+        display: flex
+    }
+
+    .home-usecase-img {
+        padding: 0;
+        width: 40.170940171000005% !important;
+        max-width: none;
+        margin-left: 0 !important
+    }
+
+    .tab-img.active {
+        min-height: 600px
+    }
+
+    .tab-img.active img {
+        height: 100%;
+        width: auto
+    }
+
+    .hs-tabs__nav li {
+        max-width: 170px;
+        min-width: 170px
+    }
+
+    .three-block-section {
+        padding: 100px 0
+    }
+}
+
+@media(min-width: 1025px) {
+    .home-usecase-content {
+        max-width:690px
+    }
+
+    .hs-tabs__nav li {
+        max-width: 200px;
+        min-width: 200px
+    }
+
+    .hs-tabs__navitem {
+        padding: 15px
+    }
+}
+
+@media(min-width: 1400px) {
+    .home-hero-banner {
+        padding:150px 0
+    }
+}
+
+@media(min-width: 1920px) {
+    .home-usecase-wrapper .row-fluid-wrapper {
+        max-width:1920px
+    }
+}
+
+
+.home-hero-banner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    background-image: url(../images/banner-about-cf-mobile-thumbnail.jpg);
+    position: relative
+}
+
+.home-hero-banner:before {
+    content: "";
+    background-image: url(../images/graphics-home-banner-video-overlay.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0
+}
+
+.hero-text-wrap {
+    position: relative;
+    z-index: 22;
+    opacity: .8
+}
+
+.home-hero-banner h1 span {
+    font-family: "Gotham-Bold"
+}
+
+.home-hero-banner h1 {
+    font-size: 30px;
+    line-height: 38px
+}
+
+.home-hero-banner p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 750px
+}
+
+.three-block-section {
+    padding: 50px 0 20px;
+    text-align: center
+}
+
+.title-wrap {
+    text-align: center
+}
+
+span.icon-wrap {
+    background: #fbfbfb;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+    filter: grayscale(0%);
+    transition: 300ms;
+    margin: 0 auto 15px;
+    object-fit: contain
+}
+
+.single-block-wrap {
+    margin-bottom: 30px
+}
+
+.single-block-wrap:hover span.icon-wrap {
+    filter: grayscale(0);
+    transition: 300ms;
+    background: #f5f8fa;
+    transform: scale(1.05)
+}
+
+.three-block-section h3 {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center
+}
+
+.single-block-wrap p {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 10px
+}
+
+.home-usecase-wrapper {
+    background: #f5f8fa
+}
+
+.home-usecase-wrapper .row-fluid-wrapper {
+    max-width: 100%;
+    padding: 0
+}
+
+.home-usecase-content p {
+    margin-bottom: 10px
+}
+
+.home-usecase-content {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 30px 15px 50px;
+    margin-left: 0 !important
+}
+
+.home-usecase-wrapper .row-fluid {
+    display: block
+}
+
+.tab-img {
+    display: none
+}
+
+.tab-img.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: unset
+}
+
+.home-usecase-img {
+    position: relative;
+    overflow: hidden;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100% !important;
+    max-width: 100%
+}
+
+.story-title-wrap h2 {
+    margin-bottom: 20px
+}
+
+.story-title-wrap {
+    padding-bottom: 50px;
+    background: #fff;
+    text-align: center;
+    display: block;
+    overflow: hidden
+}
+
+.client-section {
+    padding: 50px 0 25px
+}
+
+.client-title {
+    text-align: center
+}
+
+.tab-img.active img {
+    height: auto;
+    width: 100%;
+    max-width: unset
+}
+
+.contact-form-wrapper .actions input {
+    display: block;
+    width: 100%
+}
+
+.hs-tabs__nav li a.hs-tabs__navitem--active:after {
+    background: #1f89de
+}
+
+.hs-tabs__nav li a:after {
+    content: "";
+    background: #cfdee7;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 34px;
+    margin-top: 10px
+}
+
+.hs-tabs__navitem:not(.hs-tabs__navitem--active) {
+    background-color: transparent;
+    color: #3c556e
+}
+
+.hs-tabs__item,.hs-tabs__navitem {
+    border: 0
+}
+
+.hs-tabs__navitem--active {
+    color: #054fa0;
+    background: 0
+}
+
+.hs-tabs__navitem {
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "Gotham-bold";
+    text-transform: uppercase;
+    padding: 20px 4px 30px
+}
+
+.hs-tabs__nav li {
+    max-width: unset;
+    min-width: unset;
+    width: 33%
+}
+
+.hs-tabs {
+    min-height: 300px
+}
+
+.three-block-section img {
+    margin-bottom: 10px
+}
+
+@media(min-width: 768px) {
+    .home-hero-banner {
+        background-image:url(../images/banner-about-cf-large-thumbnail.jpg)
+    }
+
+    .three-block-section img {
+        margin-bottom: 0
+    }
+
+    .single-block-wrap {
+        margin-bottom: 0
+    }
+
+    .three-block-section {
+        padding: 50px 0
+    }
+
+    .home-hero-banner h1 {
+        font-size: 38px;
+        line-height: 42px
+    }
+
+    .hs-tabs__nav li {
+        max-width: 220px;
+        min-width: 220px;
+        width: inherit
+    }
+
+    .hs-tabs__navitem {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 15px 5px
+    }
+}
+
+@media(min-width: 992px) {
+    .client-section {
+        padding:80px 0
+    }
+
+    .home-usecase-content {
+        padding: 50px 0;
+        width: 57.264957265% !important;
+        margin-left: 2.564102564% !important;
+        max-width: 550px
+    }
+
+    .home-hero-banner h1 {
+        font-size: 42px;
+        line-height: 58px
+    }
+
+    .home-hero-banner {
+        padding: 160px 0
+    }
+
+    .home-usecase-wrapper .row-fluid {
+        display: flex
+    }
+
+    .home-usecase-img {
+        padding: 0;
+        width: 40.170940171000005% !important;
+        max-width: none;
+        margin-left: 0 !important
+    }
+
+    .tab-img.active {
+        min-height: 600px
+    }
+
+    .tab-img.active img {
+        height: 100%;
+        width: auto
+    }
+
+    .hs-tabs__nav li {
+        max-width: 170px;
+        min-width: 170px
+    }
+
+    .three-block-section {
+        padding: 100px 0
+    }
+}
+
+@media(min-width: 1025px) {
+    .home-usecase-content {
+        max-width:690px
+    }
+
+    .hs-tabs__nav li {
+        max-width: 200px;
+        min-width: 200px
+    }
+
+    .hs-tabs__navitem {
+        padding: 15px
+    }
+}
+
+@media(min-width: 1400px) {
+    .home-hero-banner {
+        padding:150px 0
+    }
+}
+
+@media(min-width: 1920px) {
+    .home-usecase-wrapper .row-fluid-wrapper {
+        max-width:1920px
+    }
+}
