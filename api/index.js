@@ -7,7 +7,7 @@ const annotationRoutes=require('./routes/annotationRoutes')
 const expertiseRoutes=require('./routes/expertiseRoutes')
 const useCaseCategoryRoutes=require('./routes/useCaseCategoryRoutes')
 const useCaseRoutes=require('./routes/useCaseRoutes')
-const WhyUsRoutes=require('./routes/whyUsRoutes')
+const WhyUsRoutes=require('./routes/WhyUsRoutes')
 const visionCatRoutes=require('./routes/visionCatRoutes')
 const benefitsRoutes=require('./routes/benefitsRoutes')
 
